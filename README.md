@@ -9,7 +9,7 @@ And for simplicity, we have omitted the front-end  odometry estimation.
 ```bash
 mkdir catkin_ws/src
 cd catkin_ws/src
-git clone 
+git clone git@github.com:neng-wang/SGLC-PGO.git
 catkin_make
 source devel/setup.bash
 roslaunch sglc demo_pgo_loop_correction.launch  // for slam 
