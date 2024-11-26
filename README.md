@@ -2,7 +2,7 @@
 
 This repository integrates the SGLC into SLAM back-end, which is  implemented through a pose graph optimization framework. It primarily  references [SC-PGO](https://github.com/gisbi-kim/SC-A-LOAM?tab=readme-ov-file). 
 
-And for simplicity, we have omitted the front-end  odometry estimation.
+For simplicity, we have omitted the front-end  odometry estimation.
 
 ### Usage
 
