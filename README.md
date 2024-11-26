@@ -12,7 +12,7 @@ cd catkin_ws/src
 git clone git@github.com:neng-wang/SGLC-PGO.git
 catkin_make
 source devel/setup.bash
-roslaunch sglc demo_pgo_loop_correction.launch  // for slam 
+roslaunch sglc demo_pgo_loop_correction.launch
 #Tip: replace the lidar_path and label_path in the .launch file
 ```
 
