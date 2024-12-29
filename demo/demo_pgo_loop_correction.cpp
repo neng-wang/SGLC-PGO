@@ -280,12 +280,12 @@ int main(int argc, char **argv){
                     int src_frame_idx = keyidx2idx[SemGraph.loop_pair_vec.back().first];
                     int tar_frame_idx = keyidx2idx[SemGraph.loop_pair_vec.back().second];
                     Eigen::Matrix4d trans = SemGraph.loop_trans_vec.back();
-                    // trans = trans.inverse();
+                    
                     std::cout << "[Loop Detection]  between:" << src_frame_idx<< " ------ " <<tar_frame_idx << \
                                 ",  Time [gen des]:"<<SemGraph.time_gen_des<<"ms, [loop search]:"<<SemGraph.time_search<<"ms"<<std::endl;
                     std::cout << "[Loop Pose]" << SemGraph.loop_trans_vec.back() << std::endl;
 
-                    gtsam::Point3 ttem(trans.block<3,1>(1,3));
+                    gtsam::Point3 ttem(trans.block<3,1>(0,3));
                     gtsam::Rot3 Rtem(trans.block<3,3>(0,0));
 
                     mtxPosegraph.lock();  
