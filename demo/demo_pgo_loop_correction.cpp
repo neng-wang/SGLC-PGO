@@ -392,5 +392,7 @@ int main(int argc, char **argv){
         cloudInd++;
         if(!runPublishFlag) runPublishFlag=true;
     }
+    
+    isam_update.join();
     return 0;
 }
