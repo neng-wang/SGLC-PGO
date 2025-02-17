@@ -190,9 +190,9 @@ namespace SGLC{
         std::ifstream in_label(file_label, std::ios::binary);
         if (!in_label.is_open()) {
             std::cerr << "No file:" << file_label << std::endl;
-            exit(-1);
-            // std::pair<std::vector<Eigen::Vector3d>,std::vector<int>> empty;
-            // return empty;
+            // exit(-1);
+            std::pair<std::vector<Eigen::Vector3d>,std::vector<int>> empty;
+            return empty;
         }
         in_label.seekg(0, std::ios::end);
         uint32_t num_points = in_label.tellg() / sizeof(uint32_t);

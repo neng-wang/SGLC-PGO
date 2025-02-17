@@ -14,7 +14,7 @@
 		output="screen" 
 	/>
   <param name="lidar_path" type="string" value = "/home/wangneng/DataFast/kitti/sequences/00/velodyne/"/>  
-  <param name="label_path" type="string" value = "/home/wangneng/SLAM/loop_closure/SegNet4D_predicitions/kitti/sequences/00/predictions/"/>
+  <param name="label_path" type="string" value = "/home/wangneng/DataFast/SegNet4D_predictions/kitti/sequences/00/predictions/"/>
   <param name="pose_path" type="string" value = "$(find sglc)/poses/kitti00_kissicp.txt"/>
   <param name="config_path" type="string" value = "$(find sglc)/config/config_kitti_graph.yaml"/>
   <param name="map_voxel_size" type="double" value = "1"/>
